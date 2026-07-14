@@ -31,7 +31,7 @@ Brands & Partners
 <img
 v-for="brand in brands"
 :src="brand"
-class="mx-auto h-20 object-contain transition hover:scale-200 animation-transform"
+class="mx-auto h-20 object-contain transition hover:scale-130 animation-transform"
 />
 
 </div>

@@ -36,7 +36,7 @@ import vision from '@/assets/images/about/vision.jpg'
 
                 <img
                     :src="company"
-                    class="rounded-lg shadow-lg"
+                    class="rounded-lg shadow-lg hover:scale-105 transition duration-300 "
                 >
 
                 <div>
@@ -79,7 +79,7 @@ import vision from '@/assets/images/about/vision.jpg'
 
                     <img
                         :src="mission"
-                        class="rounded mb-5"
+                        class="rounded mb-5 hover:scale-105 transition duration-300"
                     >
 
                     <h3 class="text-2xl font-bold mb-4">
@@ -107,7 +107,7 @@ import vision from '@/assets/images/about/vision.jpg'
 
                     <img
                         :src="vision"
-                        class="rounded mb-5"
+                        class="rounded mb-5 w-[100%] h-[600px] hover:scale-105 transition duration-300"
                     >
 
                     <h3 class="text-2xl font-bold mb-4">
@@ -116,6 +116,10 @@ import vision from '@/assets/images/about/vision.jpg'
 
                     <p class="text-gray-600 leading-8">
                         To become one of the leading industrial solution
+                        providers recognized for quality and excellence.
+                         To become one of the leading industrial solution
+                        providers recognized for quality and excellence.
+                         To become one of the leading industrial solution
                         providers recognized for quality and excellence.
                     </p>
 

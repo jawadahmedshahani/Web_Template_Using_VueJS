@@ -49,7 +49,7 @@ import heroBanner from '@/assets/images/hero/hero-banner.jpg'
                 <img
                     :src="heroBanner"
                     alt="Hero Image"
-                    class="w-full max-w-xl hover:scale-150 transition-transform"
+                    class="w-full max-w-xl hover:scale-105 transition-transform"
                 >
 
             </div>
