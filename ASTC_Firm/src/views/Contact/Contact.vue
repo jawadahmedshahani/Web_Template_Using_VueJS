@@ -37,11 +37,7 @@ import { Phone, Mail, MapPin, Clock3 } from 'lucide-vue-next'
 
                 <div>
 
-                    <img
-                        :src="office"
-                        alt="Office"
-                        class="rounded-lg shadow-lg mb-8"
-                    >
+                   
 
                     <div class="space-y-6">
 
@@ -118,6 +114,13 @@ import { Phone, Mail, MapPin, Clock3 } from 'lucide-vue-next'
                         </div>
 
                     </div>
+                    <br>
+                
+                     <img
+                        :src="office"
+                        alt="Office"
+                        class="rounded-lg shadow-lg mb-8 h-[400px]"
+                    >
 
                 </div>
 
@@ -150,13 +153,13 @@ import { Phone, Mail, MapPin, Clock3 } from 'lucide-vue-next'
                         >
 
                         <textarea
-                            rows="6"
+                            rows="15"
                             placeholder="Message"
                             class="w-full border rounded-lg p-4 outline-none focus:border-orange-500"
                         ></textarea>
 
                         <button
-                            class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-lg transition"
+                            class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-lg transition justify-center flex items-center gap-6"
                         >
                             Send Message
                         </button>

@@ -54,7 +54,7 @@ const navLinks = [
 
                 <li class="flex items-center gap-2">
 
-                    <Search class="w-5 h-5 cursor-pointer"/>
+                    <Search class="w-5 h-5 cursor-pointer hover:text-orange-500 transition"/>
                     <input type="text" placeholder="Search..." class="ml-2 px-2 py-1 border rounded focus:outline-none focus:ring-2 focus:ring-orange-500"/>
 
                 </li>

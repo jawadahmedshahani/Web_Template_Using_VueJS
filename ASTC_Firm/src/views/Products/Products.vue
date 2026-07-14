@@ -97,7 +97,7 @@ const products = [
                     <img
                         :src="product.image"
                         :alt="product.title"
-                        class="w-full h-60 object-cover hover:scale-120 transition-transform"
+                       class="h-56 w-full object-cover grayscale hover:grayscale-0 hover:scale-110 transition-all duration-300"
                     >
 
                     <div class="p-6">

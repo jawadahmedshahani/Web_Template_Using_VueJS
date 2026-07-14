@@ -1,9 +1,9 @@
 <script setup>
-import { Phone, Mail, Clock3 } from 'lucide-vue-next'
+import { Phone, Mail, Clock3,Facebook,Instagram } from 'lucide-vue-next'
 </script>
 
 <template>
-    <div class="bg-gray-500 text-white text-sm">
+    <div class="bg-gray-100 text-black text-lg shadow-md">
         <div class="container mx-auto flex justify-between items-center py-2 px-4">
 
             <!-- Left -->
@@ -22,10 +22,18 @@ import { Phone, Mail, Clock3 } from 'lucide-vue-next'
             </div>
 
             <!-- Right -->
-            <div class="flex items-center gap-2">
-                <Clock3 class="w-4 h-4" />
-                <span>Mon - Sat : 8:00 AM - 6:00 PM</span>
-            </div>
+          
+            <div class="flex items-center gap-4">
+                <a href="#" class="hover:text-orange-500 transition">
+                    <Facebook class="w-6 h-6" />
+                </a>
+                <a href="#" class="hover:text-orange-500 transition">
+                    <Instagram class="w-6 h-6" />
+                </a>
+                <button class="bg-blue-500 hover:bg-orange-600 text-white px-4 py-1 rounded transition">
+                    Get a Quote
+                </button>
+            </div>    
 
         </div>
     </div>

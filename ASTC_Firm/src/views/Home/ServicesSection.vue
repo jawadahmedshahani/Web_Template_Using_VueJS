@@ -92,7 +92,7 @@ const services = [
 
                     <img
                         :src="service.image"
-                        class="h-56 w-full object-cover hover:scale-110 transition duration-300"
+                        class="h-56 w-full object-cover grayscale hover:grayscale-0 hover:scale-110 transition-all duration-300"
                     >
 
                     <div class="p-6">
