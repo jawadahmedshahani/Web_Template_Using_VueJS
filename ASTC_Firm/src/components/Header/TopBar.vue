@@ -9,12 +9,12 @@ import { Phone, Mail, Clock3,Facebook,Instagram } from 'lucide-vue-next'
             <!-- Left -->
             <div class="flex items-center gap-6">
 
-                <div class="flex items-center gap-2">
+                <div class="flex items-center gap-2 hover:text-orange-500 transition cursor-pointer">
                     <Phone class="w-4 h-4" />
                     <span>+971 50 123 4567</span>
                 </div>
 
-                <div class="flex items-center gap-2">
+                <div class="flex items-center gap-2 hover:text-orange-500 transition cursor-pointer">
                     <Mail class="w-4 h-4" />
                     <span>info@company.com</span>
                 </div>

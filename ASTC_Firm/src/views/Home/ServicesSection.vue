@@ -16,51 +16,26 @@ import service7 from '@/assets/images/services/service-7.jpg'
 import service8 from '@/assets/images/services/service-8.jpg'
 
 const services = [
-    {
-        title: 'Engineering',
-        image: service1
-    },
-    {
-        title: 'Maintenance',
-        image: service2
-    },
-    {
-        title: 'Fabrication',
-        image: service3
-    },
-    {
-        title: 'Industrial Solutions',
-        image: service4
-    },
-    {
-        title: 'Consulting',
-        image: service5
-    },
-    {
-        title: 'Project Management',
-        image: service6
-    },
-    {
-        title: 'Safety & Compliance',
-        image: service7
-    },
-    {
-        title: 'Training & Development',
-        image: service8
-    }
+    { title: 'Engineering', image: service1 },
+    { title: 'Maintenance', image: service2 },
+    { title: 'Fabrication', image: service3 },
+    { title: 'Industrial Solutions', image: service4 },
+    { title: 'Consulting', image: service5 },
+    { title: 'Project Management', image: service6 },
+    { title: 'Safety & Compliance', image: service7 },
+    { title: 'Training & Development', image: service8 }
 ]
 </script>
 
 <template>
-
 <section class="bg-gray-100 py-20">
-
     <div class="container mx-auto px-6">
 
         <h2 class="text-4xl font-bold text-center mb-12">
             Our Services
         </h2>
 
+        <!-- Padding barha di taake dots neche chale jayen -->
         <Swiper
             :modules="[Navigation, Pagination, Autoplay]"
             :slides-per-view="1"
@@ -73,44 +48,42 @@ const services = [
                 disableOnInteraction: false
             }"
             :breakpoints="{
-                640: {
-                    slidesPerView: 2
-                },
-                1024: {
-                    slidesPerView: 4
-                }
+                640: { slidesPerView: 2 },
+                1024: { slidesPerView: 4 }
             }"
-            class="pb-14"
+            class="services-swiper pb-14"
         >
-
-            <SwiperSlide
-                v-for="service in services"
-                :key="service.title"
-            >
-
+            <SwiperSlide v-for="service in services" :key="service.title">
                 <div class="bg-white rounded-lg overflow-hidden shadow hover:shadow-xl transition duration-300">
-
-                    <img
-                        :src="service.image"
-                        class="h-56 w-full object-cover grayscale hover:grayscale-0 hover:scale-110 transition-all duration-300"
-                    >
-
+                    <div class="overflow-hidden h-56 w-full">
+                        <img
+                            :src="service.image"
+                            class="h-full w-full object-cover grayscale hover:grayscale-0 hover:scale-110 transition-all duration-300"
+                        >
+                    </div>
                     <div class="p-6">
-
                         <h3 class="text-xl font-semibold text-center">
                             {{ service.title }}
                         </h3>
-
                     </div>
-
                 </div>
-
             </SwiperSlide>
-
         </Swiper>
 
     </div>
-
 </section>
-
 </template>
+
+<style scoped>
+
+.services-swiper :deep(.swiper-pagination) {
+    position: static;
+    margin-top: 24px;
+}
+
+
+.services-swiper :deep(.swiper-button-next),
+.services-swiper :deep(.swiper-button-prev) {
+    top: 45%;
+}
+</style>
